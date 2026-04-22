@@ -1,6 +1,7 @@
 # Washington DC AirBnb Dashboard
 
 link: https://dc-airbnb-dashboard-aml6xrxnfrj8p4mwbqbxnf.streamlit.app/
+If the site is sleeping due to inactivity, please just reactivate it. 
 
 This dashboard analyzes data regarding Airbnb listings within the District of Columbia and visualizes them into insightful maps, charts, and diagrams.
 It uses data from thise Kaggle database: https://www.kaggle.com/datasets/thedevastator/airbnb-listings-and-reviews-in-washington-dc
