@@ -18,9 +18,7 @@ df = pd.read_csv("archive/Airbnb Listings.csv")
 df = df[df["price"] < 1000]  # Filter out extreme prices for better visualization
 df = df[df["minimum_nights"] < 40]  # Filter out extreme minimum nights for better visualization
 
-# -----------------------
 # Metrics Section
-# -----------------------
 col1, col2, col3 = st.columns(3)
 
 col1.metric("Total Listings", len(df))
@@ -28,16 +26,12 @@ col2.metric("Unique Neighborhoods", df["neighbourhood"].nunique())
 
 if "price" in df.columns:
     col3.metric("Average Price", f"${df['price'].mean():.0f}")
-
-# -----------------------
+    
 # Raw Data
-# -----------------------
 st.subheader("Raw Airbnb Listings Data")
 st.dataframe(df)
 
-# -----------------------
-# Prepare Map Data
-# -----------------------
+# Map Data
 map_df = df[["latitude", "longitude"]].dropna()
 
 view_state = pdk.ViewState(
@@ -47,9 +41,7 @@ view_state = pdk.ViewState(
     pitch=50,
 )
 
-# -----------------------
 # Chart Data
-# -----------------------
 top_neighbourhoods = (
     df["neighbourhood"]
     .value_counts()
@@ -121,9 +113,7 @@ def haversine(lat1, lon1, lat2, lon2):
 
     return R * c
 
-# -----------------------
 # Map + Chart Layout
-# -----------------------
 col1, col2 = st.columns([2, 1])
 
 # Maps and charts in the left column
