@@ -6,6 +6,8 @@ If the site is sleeping due to inactivity, please just reactivate it.
 This dashboard analyzes data regarding Airbnb 3,700+ listings within the District of Columbia and visualizes them into insightful maps, charts, and diagrams.
 It uses data from thise Kaggle database: https://www.kaggle.com/datasets/thedevastator/airbnb-listings-and-reviews-in-washington-dc
 
+The purpose of this dashboard is to give potential stakeholders insights on Airbnb listing prices across the District. These insights include how prices differ in each neighborhood, the range of the prices, and the correlation to distance to certain attractions. 
+
 The initial top insights give the total listings, # of unique neigborhoods, average price, and the raw table of the dataset.
 The following visualizations are listed below:
   *Airbnb Listing Density Map
