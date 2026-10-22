@@ -8,6 +8,8 @@ It uses data from thise Kaggle database: https://www.kaggle.com/datasets/thedeva
 
 The purpose of this dashboard is to give potential stakeholders insights on Airbnb listing prices across the District. These insights include how prices differ in each neighborhood, the range of the prices, and the correlation to distance to certain attractions. 
 
+Python data analytics and mathematical libraries used include Pandas, NumPy, and PyDeck.
+
 The initial top insights give the total listings, # of unique neigborhoods, average price, and the raw table of the dataset.
 The following visualizations are listed below:
   *Airbnb Listing Density Map
